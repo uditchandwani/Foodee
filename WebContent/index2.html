@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Food Order</title>
+<script src="foodorder2.js" async></script>
+<style type="text/css">
+	.container
+	{
+		margin-left: 3%;
+		margin-right: 3%
+	}
+	.header
+	{
+		font-size: 50px;
+		text-align: center;
+	}
+	.menu-start
+	{
+
+	}
+	.menu-head
+	{
+		font-size: 40px;
+		text-align: center;
+	}
+	.menu-item
+	{
+		/*width: 50%*/
+	}
+	.item-img
+	{
+		width: 40px;
+		height: 40px;
+	}
+	.item-title
+	{
+		float: left;
+		padding-left: 10px;
+		padding-right: 20px;
+	}
+	.item-price
+	{
+		/*padding-left: 160px;	*/
+	}
+	.btn-add
+	{
+
+	}
+	.btn-add-to-cart
+	{
+		padding-left: 50px;
+	}
+	.cart-start
+	{
+
+	}
+	.cart-item
+	{
+
+	}
+	.cart-head
+	{
+		text-align: center;
+		font-size: 40px;
+	}
+	.cart-row
+	{
+
+	}
+	.cart-items
+	{
+
+	}
+	.cart-item
+	{
+		width: 40%;
+		font-size: 20px;
+		margin-right: 1.5em;
+	    /*padding-bottom: 10px;*/
+	    margin-top: 10px;
+	    font-weight: bold;
+	}
+	.cart-price
+	{
+		width: 20%;
+		font-size: 20px;
+		margin-right: 1.5em;
+	    /*padding-bottom: 10px;*/
+	    margin-top: 10px;
+	    font-weight: bold;
+	}
+
+	.cart-quantity
+	{
+		width: 40%;
+		font-size: 20px;
+		margin-right: 1.5em;
+	    /*padding-bottom: 10px;*/
+	    margin-top: 10px;
+	    font-weight: bold;
+	}
+	.cart-total
+	{
+		text-align: end;
+	    margin-top: 10px;
+	    margin-right: 10px;
+	}
+	.cart-total-title
+	{
+		font-weight: bold;
+		margin-right: 20px;
+	}
+	.cart-total-price
+	{
+
+	}
+	.cart-column
+	{
+		/*border-right: none;*/
+		/*width: 38%;
+		align-items: center;
+	    border-bottom: 1px solid black;
+	    margin-right: 1.5em;
+	    padding-bottom: 10px;
+	    margin-top: 10px;*/
+	    /*float: left;*/
+	}
+	.cart-item-img
+	{
+		width: 75px;
+		height: auto;
+		border-radius: 10px;
+	}
+	.cart-item-title
+	{
+		margin-left: .5em;
+		/*display: flex;*/
+		font-weight: bold;
+		align-items: center;
+		font-size: 20px;
+	}
+	.cart-item-title-1
+	{
+		/*border-left: none;*/
+	}
+	.cart-item-price
+	{
+		/*border-bottom: 1px solid black;*/
+		width: 20%;
+		/*float: left;*/
+		font-size: 20px
+	}
+	.cart-item-quantity
+	{
+		/*border-bottom: 1px solid black;*/
+	}
+	.cart-quantity-input
+	{
+		height: 34px;
+	    width: 50px;
+	    border-radius: 5px;
+	    border: 1px solid #56CCF2;
+	    background-color: #eee;
+	    color: #333;
+	    padding: 0;
+	    text-align: center;
+	    font-size: 1.2em;
+	    margin-right: 25px;
+	}
+	.cart-remove-btn
+	{
+		color: white;
+	    background-color: #EB5757;
+	    border: none;
+	    border-radius: .3em;
+	    font-weight: bold;
+	    font-size: 20px;
+	}
+	.btn-purchase
+	{
+		display: block;
+	    margin: 40px auto 80px auto;
+	    font-size: 1.75em;
+	}
+	.cart-table
+	{
+		width: 100%;text-align: center;
+	}
+	.log-in-link
+	{
+		text-align: end;
+	}
+	table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		Food Order
+	</div>
+	<hr>
+	<div class="log-in-link"><a href="login.jsp" >Log in / Sign up</a></div>
+	<div class="menu-start">
+			<div class="menu-head">
+				Menu
+			</div>
+			<div class="menu-item">
+				<div style="float: left;"><img class="item-img" src="res_img_5.jpg"></div>
+				<div>
+					<div class="item-title">Pineapple Juice</div>
+					<div class="item-price">130 Rs</div>
+					<div class="btn-add-to-cart"><button class="btn-add">Add to cart</button></div>
+				</div>
+			</div>
+			<br>
+			<div class="menu-item">
+				<div style="float: left;"><img class="item-img" src="res_img_5.jpg"></div>
+				<div>
+					<div class="item-title">Freshly Sweet Lime Juice</div>
+					<div class="item-price">160 Rs</div>
+					<div class="btn-add-to-cart"><button class="btn-add">Add to cart</button></div>
+				</div>
+			</div>
+			<br>
+			<div class="menu-item">
+				<div style="float: left;"><img class="item-img" src="res_img_5.jpg"></div>
+				<div>
+					<div class="item-title">Soft Drinks</div>
+					<div class="item-price">100 Rs</div>
+					<div class="btn-add-to-cart"><button class="btn-add">Add to cart</button></div>
+				</div>
+			</div>
+			<br>
+			<div class="menu-item">
+				<div style="float: left;"><img class="item-img" src="res_img_5.jpg"></div>
+				<div>
+					<div class="item-title">Vegetable Seekh Kebab</div>
+					<div class="item-price">215 Rs</div>
+					<div class="btn-add-to-cart"><button class="btn-add">Add to cart</button></div>
+				</div>
+			</div>
+	</div>
+	<div class="cart-start">
+		<div class="cart-head">Cart</div>
+		<!-- <div class="cart-row">
+			<div style="float: left;width: 40%;border-bottom: 1px solid black;"><span class="cart-item">Item</span></div>
+			<div style="float: left;width: 20%;border-bottom: 1px solid black;"><span class="cart-price">Price</span></div>
+			<div style="float: left;width: 40%;border-bottom: 1px solid black;"><span class="cart-quantity">Quantity</span></div>
+			<br><br>
+		</div>
+		<div class="cart-items">
+			<div class="cart-row">
+				<div class="cart-column">
+					<img class="cart-item-img" src="res_img_5.jpg" width="100" height="100">
+					<span class="cart-item-title">T-shirt</span>
+				</div>
+				<div class="cart-item-price">215 Rs</div>
+				<div class="cart-item-quantity">
+					<input type="number" value="1" class="cart-quantity-input">
+					<button class="cart-remove-btn">Remove</button>
+				</div>
+			</div>
+
+		</div> -->
+		<table class="cart-table">
+			<tr>
+				<!-- <th style="width: 20%"></th> -->
+				<th style="width: 40%;font-size: 20px;" colspan="2">Item</th>
+				<th style="width: 20%;font-size: 20px;">Price</th>
+				<th style="width: 40%;font-size: 20px;">Quantity</th>
+			</tr>
+			
+		</table>
+		<div class="cart-total">
+            <span class="cart-total-title">Total</span>
+            <span class="cart-total-price">0 Rs</span>
+        </div>
+        <button class="btn-purchase" type="button">PURCHASE</button>
+	</div>
+
+</div>
+</body>
+</html>
